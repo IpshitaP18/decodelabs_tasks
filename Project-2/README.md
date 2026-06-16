@@ -1,10 +1,10 @@
-# 🎓 Student Pass/Fail Prediction Using AI
+# Student Pass/Fail Prediction Using AI
 
 > A beginner-friendly Machine Learning project that predicts whether a student will **Pass** or **Fail** based on demographic information and exam scores, using a **Decision Tree Classifier** and a live **Streamlit** web app.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project builds an end-to-end Machine Learning pipeline:
 
@@ -16,7 +16,7 @@ This project builds an end-to-end Machine Learning pipeline:
 
 ---
 
-## 🎯 Objective
+## Objective
 
 Predict whether a student will **Pass** or **Fail** based on:
 
@@ -41,7 +41,7 @@ If Average Score <  60  →  Fail
 
 ---
 
-## 📂 Dataset Information
+## Dataset Information
 
 | Property | Detail |
 |---|---|
@@ -57,7 +57,7 @@ Download `StudentsPerformance.csv` and place it inside the `data/` folder.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -71,7 +71,7 @@ Download `StudentsPerformance.csv` and place it inside the `data/` folder.
 
 ---
 
-## ⚙️ Installation Steps
+## Installation Steps
 
 ### 1. Clone the Repository
 
@@ -101,7 +101,7 @@ pip install -r requirements.txt
 ### 4. Download the Dataset
 
 Download `StudentsPerformance.csv` from:
-👉 [https://www.kaggle.com/datasets/spscientist/students-performance-in-exams](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
+[https://www.kaggle.com/datasets/spscientist/students-performance-in-exams](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
 
 Place the file at:
 ```
@@ -112,7 +112,7 @@ Student-Pass-Fail-Prediction/
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ### Step 1 — Train the Model
 
@@ -128,12 +128,12 @@ This will:
 
 **Expected output:**
 ```
-✅ Dataset loaded: 1000 rows, 8 columns
-🌲 Decision Tree trained successfully.
-🎯 Model Accuracy: XX.XX%
-💾 model.pkl saved.
-💾 encoders.pkl saved.
-💾 accuracy.pkl saved.
+Dataset loaded: 1000 rows, 8 columns
+Decision Tree trained successfully.
+Model Accuracy: XX.XX%
+model.pkl saved.
+encoders.pkl saved.
+accuracy.pkl saved.
 ```
 
 ### Step 2 — Launch the Streamlit App
@@ -146,7 +146,7 @@ Open your browser at: `http://localhost:8501`
 
 ---
 
-## 📊 Model Performance
+## Model Performance
 
 | Metric | Value |
 |---|---|
@@ -158,22 +158,22 @@ Open your browser at: `http://localhost:8501`
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
 ### Streamlit App — Prediction Page
 ![Prediction Page](screenshots/prediction_page.png)
 
-### 📊 Pass/Fail Distribution
+### Pass/Fail Distribution
 ![Pass/Fail Distribution](screenshots/pass_fail_distribution.png)
 
-### 📈 Correlation Heatmap
+### Feature Distribution
 ![Correlation Heatmap](screenshots/feature_distribution.png)
 
-### 📉 Confusion Matrix
+### Confusion Matrix
 ![Confusion Matrix](screenshots/confusion_matrix.png)
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 1. **Add more algorithms** — Compare Random Forest, SVM, Logistic Regression, and XGBoost performance side-by-side.
 2. **Hyperparameter tuning** — Use `GridSearchCV` or `RandomizedSearchCV` to find optimal Decision Tree parameters.
@@ -186,7 +186,7 @@ Open your browser at: `http://localhost:8501`
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Student-Pass-Fail-Prediction/
@@ -214,13 +214,13 @@ Student-Pass-Fail-Prediction/
 
 ---
 
-## 📄 License
+## License
 
 This project is open-source and free to use for educational and personal purposes.
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - Dataset by [SP Scientist on Kaggle](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
 - Built with [Streamlit](https://streamlit.io/) and [scikit-learn](https://scikit-learn.org/)
