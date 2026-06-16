@@ -27,9 +27,6 @@ Predict whether a student will **Pass** or **Fail** based on:
 | Parental Level of Education | Categorical |
 | Lunch Type | Categorical |
 | Test Preparation Course | Categorical |
-| Math Score | Numerical (0–100) |
-| Reading Score | Numerical (0–100) |
-| Writing Score | Numerical (0–100) |
 
 **Pass/Fail Rule:**
 
@@ -153,7 +150,7 @@ Open your browser at: `http://localhost:8501`
 | **Algorithm** | Decision Tree Classifier |
 | **Train / Test Split** | 80% / 20% |
 | **Accuracy** | ~64.50% |
-| **Features** | 8 (5 categorical + 3 numerical) |
+| **Features** | 5 categorical features|
 | **Target Classes** | Pass, Fail |
 
 ---
