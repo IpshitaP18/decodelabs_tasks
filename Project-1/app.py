@@ -1,6 +1,12 @@
 import streamlit as st
 import time
-from chatbot import get_response, is_exit_command, get_welcome_message, CHATBOT_NAME
+from chatbot import (
+    get_response,
+    is_exit_command,
+    get_welcome_message,
+    resolve_special_tokens,
+    CHATBOT_NAME
+)
 
 st.set_page_config(
     page_title=f"{CHATBOT_NAME} — Vibrant AI",
@@ -184,6 +190,7 @@ else:
             st.markdown(user_msg)
 
         bot_reply = get_response(user_msg)
+        bot_reply = resolve_special_tokens(bot_reply)
 
         with st.spinner("Thinking..."):
             time.sleep(0.35)
