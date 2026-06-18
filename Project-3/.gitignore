@@ -1,0 +1,5 @@
+venv/
+__pycache__/
+*.pyc
+spotify_tracks.csv
+.env
