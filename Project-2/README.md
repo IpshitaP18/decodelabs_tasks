@@ -1,22 +1,22 @@
-# Student Pass/Fail Prediction Using AI
+# 🎓 Student Pass/Fail Prediction Using AI
 
 > A beginner-friendly Machine Learning project that predicts whether a student will **Pass** or **Fail** based on demographic information, using a **Decision Tree Classifier** and a live **Streamlit** web app.
 
 ---
 
-## Project Overview
+## 🧠 Project Overview
 
 This project builds an end-to-end Machine Learning pipeline:
 
-- Loads real student performance data
+- Loads real student performance data 📊
 - Engineers a binary target column (`Pass` / `Fail`)
-- Trains a **Decision Tree Classifier**
-- Exposes predictions through an interactive **Streamlit** web application
-- Displays confidence scores, model accuracy, and data visualizations
+- Trains a **Decision Tree Classifier** 🌳
+- Exposes predictions through an interactive **Streamlit** web application 🌐
+- Displays confidence scores, model accuracy, and data visualizations 📈
 
 ---
 
-## Objective
+## 🎯 Objective
 
 Predict whether a student will **Pass** or **Fail** based on:
 
@@ -32,13 +32,13 @@ Predict whether a student will **Pass** or **Fail** based on:
 
 ```
 Average Score = (Math + Reading + Writing) / 3
-If Average Score >= 60  →  Pass
-If Average Score <  60  →  Fail
+If Average Score >= 60  →  Pass ✅
+If Average Score <  60  →  Fail ❌
 ```
 
 ---
 
-## Dataset Information
+## 📁 Dataset Information
 
 | Property | Detail |
 |---|---|
@@ -48,13 +48,13 @@ If Average Score <  60  →  Fail
 | **Columns** | 8 features + 1 target |
 | **Format** | CSV |
 
-**Dataset Source:** [https://www.kaggle.com/datasets/spscientist/students-performance-in-exams](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
+**Dataset Source:** 📌 [https://www.kaggle.com/datasets/spscientist/students-performance-in-exams](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
 
 Download `StudentsPerformance.csv` and place it inside the `data/` folder.
 
 ---
 
-## Technologies Used
+## 🛠 Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -68,7 +68,7 @@ Download `StudentsPerformance.csv` and place it inside the `data/` folder.
 
 ---
 
-## Installation Steps
+## ⚙️ Installation Steps
 
 ### 1. Clone the Repository
 
@@ -109,7 +109,7 @@ Student-Pass-Fail-Prediction/
 
 ---
 
-## How to Run
+## ▶️ How to Run
 
 ### Step 1 — Train the Model
 
@@ -143,7 +143,7 @@ Open your browser at: `http://localhost:8501`
 
 ---
 
-## Model Performance
+## 📊 Model Performance
 
 | Metric | Value |
 |---|---|
@@ -155,7 +155,7 @@ Open your browser at: `http://localhost:8501`
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 ### Streamlit App — Prediction Page
 ![Prediction Page](screenshots/prediction_page.png)
@@ -170,7 +170,7 @@ Open your browser at: `http://localhost:8501`
 ![Confusion Matrix](screenshots/confusion_matrix.png)
 ---
 
-## Future Improvements
+## 🚀 Future Improvements
 
 1. **Add more algorithms** — Compare Random Forest, SVM, Logistic Regression, and XGBoost performance side-by-side.
 2. **Hyperparameter tuning** — Use `GridSearchCV` or `RandomizedSearchCV` to find optimal Decision Tree parameters.
@@ -183,7 +183,7 @@ Open your browser at: `http://localhost:8501`
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 Student-Pass-Fail-Prediction/
@@ -211,13 +211,13 @@ Student-Pass-Fail-Prediction/
 
 ---
 
-## License
+## 👨‍💻 License
 
 This project is open-source and free to use for educational and personal purposes.
 
 ---
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 - Dataset by [SP Scientist on Kaggle](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
 - Built with [Streamlit](https://streamlit.io/) and [scikit-learn](https://scikit-learn.org/)
