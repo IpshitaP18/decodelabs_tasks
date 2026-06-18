@@ -1,132 +1,136 @@
-# Nova — Rule-Based AI Chatbot
 ---
 
-## Project Description
+# 🤖 Nova — Rule-Based AI Chatbot
+
+---
+
+## 📌 Project Description
 
 **Nova** is a rule-based AI chatbot web application built entirely with Python. It demonstrates fundamental AI concepts — decision-making, control flow, and rule-based response generation — without using any machine learning models or external APIs.
 
 The project is split into two clean layers:
-- **`chatbot.py`** — the brain (logic, rules, matching engine)
-- **`app.py`** — the face (Streamlit UI, session management, display)
+
+* **`chatbot.py`** — the brain (logic, rules, matching engine)
+* **`app.py`** — the face (Streamlit UI, session management, display)
 
 ---
 
-## Objective
+## 🎯 Objective
 
-- Understand and implement rule-based AI systems
-- Practice clean code architecture with separation of concerns
-- Build a deployable web application using Streamlit
-- Demonstrate NLP-adjacent concepts like keyword matching and input normalization
-
----
-
-## Features
-
-| Feature | Details |
-|---|---|
-|  Greeting Handling | hello, hi, hey, good morning, good evening |
-|  FAQ Responses | name, creator, age, capabilities, how are you |
-|  Live Time & Date | Returns the actual current time/date |
-|  Joke Generator | 4 rotating programming jokes |
-|  Partial Matching | "tell me your name" matches "your name" |
-|  Case-Insensitive | Input is normalized before matching |
-|  Random Responses | Multiple replies per rule for variety |
-|  Chat History | Full session history via `st.session_state` |
-|  Quick Suggestions | Sidebar buttons to try example prompts |
-|  Clear Chat | Reset the entire conversation |
-|  Exit Commands | bye / goodbye / quit / exit / farewell |
-|  Session Stats | Live message count in the sidebar |
+* Understand and implement rule-based AI systems
+* Practice clean code architecture with separation of concerns
+* Build a deployable web application using Streamlit
+* Demonstrate NLP-adjacent concepts like keyword matching and input normalization
 
 ---
 
-## Technologies Used
+## ✨ Features
 
-| Technology | Purpose |
-|---|---|
-| **Python 3.9+** | Core programming language |
-| **Streamlit** | Web UI framework |
-| `random` | Random response selection |
-| `datetime` | Live time and date responses |
-
-**No machine learning. No external APIs. No databases.**
+| Feature              | Details                                       |
+| -------------------- | --------------------------------------------- |
+| 👋 Greeting Handling | hello, hi, hey, good morning, good evening    |
+| ❓ FAQ Responses      | name, creator, age, capabilities, how are you |
+| ⏰ Live Time & Date   | Returns the actual current time/date          |
+| 😂 Joke Generator    | 4 rotating programming jokes                  |
+| 🔍 Partial Matching  | "tell me your name" matches "your name"       |
+| 🔤 Case-Insensitive  | Input is normalized before matching           |
+| 🎲 Random Responses  | Multiple replies per rule for variety         |
+| 💬 Chat History      | Full session history via `st.session_state`   |
+| ⚡ Quick Suggestions  | Sidebar buttons to try example prompts        |
+| 🧹 Clear Chat        | Reset the entire conversation                 |
+| 🚪 Exit Commands     | bye / goodbye / quit / exit / farewell        |
+| 📊 Session Stats     | Live message count in the sidebar             |
 
 ---
 
-## Project Structure
+## 🛠 Technologies Used
 
-```
+| Technology  | Purpose                      |
+| ----------- | ---------------------------- |
+| Python 3.9+ | Core programming language    |
+| Streamlit   | Web UI framework             |
+| random      | Random response selection    |
+| datetime    | Live time and date responses |
+
+No machine learning. No external APIs. No databases.
+
+---
+
+## 📁 Project Structure
+
+```bash
 Project-1-Rule-Based-Chatbot/
 │
-├── app.py              # Streamlit UI — page layout, input handling, chat display
-├── chatbot.py          # Chatbot logic — rules, matching engine, response selection
-├── requirements.txt    # Python dependencies (just Streamlit!)
-├── README.md           # This file
-└── screenshots/        # App screenshots for portfolio
+├── app.py              # Streamlit UI — input handling & chat display
+├── chatbot.py          # Rule engine — logic & response matching
+├── requirements.txt    # Dependencies (Streamlit only)
+├── README.md           # Project documentation
+└── screenshots/        # UI screenshots
 ```
 
 ---
 
-## How the Chatbot Works
+## ⚙️ How the Chatbot Works
 
-```
+```text
 User Input: "Hey! What's YOUR name?"
-                │
-                ▼
-        1. Normalize Input
-           → "hey! what's your name?"
-                │
-                ▼
-        2. Loop Through RULES list
-           → Check each rule's keywords
-           → "your name" found in input 
-                │
-                ▼
-        3. Pick random response
-           → "I'm Nova 🤖 — a rule-based AI chatbot!"
-                │
-                ▼
-        4. Resolve special tokens
-           → No @TIME or @DATE token, return as-is
-                │
-                ▼
-        5. Display in UI
+        │
+        ▼
+1. Normalize input
+   → "hey! what's your name?"
+        │
+        ▼
+2. Match keywords in rule set
+   → "your name" found
+        │
+        ▼
+3. Select response (randomized if multiple)
+        │
+        ▼
+4. Handle special tokens (@TIME, @DATE)
+        │
+        ▼
+5. Display response in Streamlit UI
 ```
 
-### Matching Strategy: Partial Keyword Matching
+---
 
-Instead of requiring exact input, the engine checks if any keyword **appears anywhere in** the normalized input string:
+## 🔍 Matching Strategy
+
+Nova uses **Partial Keyword Matching**:
 
 ```python
-if keyword in normalized_input:   # "your name" in "tell me your name" → True 
+if keyword in normalized_input:
 ```
 
-This makes the bot much more natural to interact with.
+✔ Flexible conversations
+✔ No strict sentence matching
+✔ Better user experience without ML
 
 ---
 
-## Installation
+## 🚀 Installation
 
 ### Prerequisites
-- Python 3.9 or higher
-- pip
+
+* Python 3.9+
+* pip
 
 ### Steps
 
 ```bash
-# 1. Clone or download the project
+# Clone repository
 git clone https://github.com/yourusername/Project-1-Rule-Based-Chatbot.git
 cd Project-1-Rule-Based-Chatbot
 
-# 2. (Recommended) Create a virtual environment
+# Create virtual environment
 python -m venv venv
 
-# Activate on Windows:
-venv\Scripts\activate
+# Activate environment
+venv\Scripts\activate   # Windows
+source venv/bin/activate  # macOS/Linux
 
-# Activate on macOS/Linux:
-source venv/bin/activate
-
-# 3. Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -138,59 +142,65 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Your browser will open automatically at `http://localhost:8501`.
+Then open:
+
+```
+http://localhost:8501
+```
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-| Chat Interface | Sidebar |
-|---|---|
+| Chat Interface                | Sidebar                             |
+| ----------------------------- | ----------------------------------- |
 | ![Chat](screenshots/chat.png) | ![Sidebar](screenshots/sidebar.png) |
 
 ---
 
 ## 💬 Example Conversations
 
-```
-You:   Hello!
-Nova:  Hey there! 👋 I'm Nova. How can I help you today?
+```text
+You: Hello!
+Nova: Hey there! 👋 I'm Nova. How can I help you today?
 
-You:   What can you do?
-Nova:  💬 Chat & Answer Questions...
-       🧠 Rule-Based Responses...
-       🕐 Tell you the time/date...
+You: What can you do?
+Nova: 💬 Chat & Answer Questions...
+      🧠 Rule-Based Responses...
+      🕐 Time & Date support...
 
-You:   Tell me a joke
-Nova:  Why do programmers prefer dark mode? Because light attracts bugs! 🐛😂
+You: Tell me a joke
+Nova: Why do programmers prefer dark mode? Because light attracts bugs! 🐛😂
 
-You:   What time is it?
-Nova:  The current time is ⏰ 02:30 PM.
+You: What time is it?
+Nova: The current time is ⏰ 02:30 PM.
 
-You:   bye
-Nova:  Goodbye! 👋 It was great chatting with you. Come back anytime!
+You: bye
+Nova: Goodbye! 👋 It was great chatting with you.
 ```
 
 ---
 
-## 🚀 Possible Improvements (Next Steps)
+## 🚀 Possible Improvements
 
-1. **Add more topics** — weather responses, math calculations, trivia
-2. **Sentiment detection** — detect positive/negative mood and adjust tone
-3. **User name memory** — ask the user's name and use it in replies
-4. **Export chat** — download conversation as a .txt or .pdf file
-5. **Text-to-speech** — read responses aloud using `pyttsx3`
-6. **Deploy to cloud** — host free on Streamlit Community Cloud
-7. **Multi-language** — detect and reply in the user's language
+* Add weather integration
+* Sentiment detection
+* User memory (name recall)
+* Export chat history
+* Text-to-speech support
+* Deploy on Streamlit Cloud
+* Multi-language support
 
 ---
 
 ## 👨‍💻 Author
 
-Built as an internship project to demonstrate rule-based AI and Python web development.
+Built as part of an internship project to demonstrate **rule-based AI and Python web development**.
 
 ---
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT License.
+
+---
