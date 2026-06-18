@@ -2,6 +2,11 @@
 
 > A beginner-friendly Machine Learning project that predicts whether a student will **Pass** or **Fail** based on demographic information, using a **Decision Tree Classifier** and a live **Streamlit** web app.
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.35-red?logo=streamlit)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3-orange?logo=scikit-learn)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 ---
 
 ## 🧠 Project Overview
