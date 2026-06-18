@@ -1,4 +1,4 @@
-# Spotify AI Song Recommender
+# 🎵 Spotify AI Song Recommender
 
 > A content-based music recommendation system built with Python, Scikit-Learn, and Streamlit.
 > **DecodeLabs Internship Project — AI Recommendation Logic**
@@ -10,27 +10,27 @@
 
 ---
 
-## Project Overview
+## 🎯 Project Overview
 
 This project implements a **Content-Based Recommendation System** that suggests Spotify tracks based on user audio preferences. Given that a user prefers certain genres and mood characteristics (energy, danceability, valence, etc.), the system computes a **Cosine Similarity** score between the user's ideal song profile and every track in the dataset, then returns the top matches.
 
 ---
 
-## Features
+## ✨ Features
 
 | Feature | Description |
 |---|---|
-| Genre Filtering | Select one or multiple genres to narrow the search pool |
-| Mood Sliders | Fine-tune energy, danceability, happiness, and acousticness |
-| Cosine Similarity | Mathematically rigorous similarity scoring using Scikit-Learn |
-| Visualizations | Genre popularity charts, energy vs danceability scatter plots |
-| Similar Song Finder | "More Like This" feature for any track in the dataset |
-| CSV Download | Export your recommendations with one click |
-| Fast & Cached | Dataset loads once per session via Streamlit's caching |
+|🎼Genre Filtering | Select one or multiple genres to narrow the search pool |
+|🎛️Mood Sliders | Fine-tune energy, danceability, happiness, and acousticness |
+|📐Cosine Similarity | Mathematically rigorous similarity scoring using Scikit-Learn |
+|📊Visualizations | Genre popularity charts, energy vs danceability scatter plots |
+|🔁Similar Song Finder | "More Like This" feature for any track in the dataset |
+|📥CSV Download | Export your recommendations with one click |
+|⚡Fast & Cached | Dataset loads once per session via Streamlit's caching |
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 spotify-recommender/
@@ -46,7 +46,7 @@ spotify-recommender/
 
 ---
 
-## Dataset
+## 📊 Dataset
 
 **Spotify Tracks Dataset** by Maharshi Pandya  
 [Download from Kaggle](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset)
@@ -72,7 +72,7 @@ Place the downloaded `dataset.csv` file in the project root and rename it to `sp
 
 ---
 
-## Installation & Setup
+## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
 ```bash
@@ -104,7 +104,7 @@ The app will open in your browser at `http://localhost:8501`.
 
 ---
 
-## Usage
+## 💡Usage
 
 1. **Select genres** from the sidebar dropdown (e.g., pop, rock, jazz).
 2. **Adjust mood sliders** — energy, danceability, valence, acousticness, popularity.
@@ -116,7 +116,7 @@ The app will open in your browser at `http://localhost:8501`.
 
 ---
 
-## Screenshots
+## 🖼️ Screenshots
 
 ### Home Page
 ![Home](screenshots/home.png)
@@ -130,7 +130,7 @@ The app will open in your browser at `http://localhost:8501`.
 ### Similar Songs
 ![Similar Songs](screenshots/similar_songs.png)
 
-## How the Recommendation Algorithm Works
+## ⚙️ How the Recommendation Algorithm Works
 
 1. **Preprocessing** — Load dataset, drop nulls/duplicates, normalize features to [0, 1].
 2. **Genre Filter** — Narrow the candidate pool to the selected genres.
@@ -147,7 +147,7 @@ where A = song feature vector
 
 ---
 
-## Future Improvements
+## 🚀 Future Improvements
 
 - Collaborative Filtering (user-user or item-item) for personalised recommendations
 - Spotify OAuth integration to use user's real listening history
@@ -158,7 +158,7 @@ where A = song feature vector
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack 
 
 | Technology | Purpose |
 |---|---|
@@ -171,12 +171,12 @@ where A = song feature vector
 
 ---
 
-## Author
+## 👨‍💻 Author
  
 Built as part of the AI/ML internship programme.
 
 ---
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License.
