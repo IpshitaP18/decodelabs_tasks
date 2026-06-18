@@ -8,6 +8,10 @@
 
 **Nova** is a rule-based AI chatbot web application built entirely with Python. It demonstrates fundamental AI concepts — decision-making, control flow, and rule-based response generation — without using any machine learning models or external APIs.
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.35-red?logo=streamlit)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 The project is split into two clean layers:
 
 * **`chatbot.py`** — the brain (logic, rules, matching engine)
